@@ -2,7 +2,7 @@ ifeq ($(SIDELOADED),1)
 MODULES = jailed
 endif
 
-PACKAGE_VERSION = 0.1.5
+PACKAGE_VERSION = 0.2.0
 ifdef APP_VERSION
   PACKAGE_VERSION := $(APP_VERSION)-$(PACKAGE_VERSION)
 endif
@@ -14,7 +14,7 @@ ifeq ($(LTS),1)
   PACKAGE_VERSION := $(PACKAGE_VERSION)-LTS
 endif
 
-TARGET := iphone:clang:latest:12.4
+TARGET := iphone:clang:latest:15.0
 INSTALL_TARGET_PROCESSES = Twitch
 
 ARCHS = arm64

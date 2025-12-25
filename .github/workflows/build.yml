@@ -9,13 +9,13 @@ on:
         default: false
         type: boolean
       ipa_url:
-        description: "Direct URL to Decrypted IPA file"
+        description: "Direct URL to your decrypted Twitch IPA file (optional - leave empty to auto-download)"
         type: string
         required: false
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
 
     steps:
       - uses: actions/checkout@v4
